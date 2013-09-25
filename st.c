@@ -326,6 +326,7 @@ static void clipcopy(const Arg *);
 static void clippaste(const Arg *);
 static void numlock(const Arg *);
 static void selpaste(const Arg *);
+static void plumb(const Arg *);
 static void xzoom(const Arg *);
 static void xzoomabs(const Arg *);
 static void xzoomreset(const Arg *);
@@ -1335,6 +1336,31 @@ ttynew(void) {
 		signal(SIGCHLD, sigchld);
 		break;
 	}
+}
+
+void
+plumb(const Arg *arg) {
+	char *ptr;
+	char str[UTF_SIZ];
+	int y;
+	Glyph *gp, *last;
+	FILE *d;
+
+	d = popen(arg->v, "w");
+
+	for(y = 0; y < term.row; y++) {
+		gp = &term.line[y][0];
+		last = &term.line[y][term.col-1];
+
+		for( ; gp <= last; ++gp) {
+			ptr = str;
+			ptr += utf8encode(gp->u, ptr);
+			*ptr = 0;
+			fputs(str, d);
+		}
+	}
+
+	pclose(d);
 }
 
 void
