@@ -7,7 +7,7 @@
  */
 static char font[] = "Meslo LG S DZ for Powerline:pixelsize=12,Inconsolata\\ for\\ Powerline:pixelsize=12";
 static int borderpx = 0;
-static char shell[] = "/bin/sh";
+static char shell[] = "/usr/bin/zsh";
 
 /* Kerning / character bounding-box mutlipliers */
 float cwscale = 1.0;
