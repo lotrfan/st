@@ -75,7 +75,6 @@ static const char *colorname[] = {
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
-    "#002b36", // Solarized dark base03
 };
 
 
@@ -84,7 +83,7 @@ static const char *colorname[] = {
  * foreground, background, cursor
  */
 static unsigned int defaultfg = 7;
-static unsigned int defaultbg = 257;
+static unsigned int defaultbg = 8;
 static unsigned int defaultcs = 256;
 
 /*
