@@ -48,28 +48,45 @@ static char termname[] = "st-256color";
 
 static unsigned int tabspaces = 8;
 
+static const char solarized_base03[]    = "#002b36";
+static const char solarized_base02[]    = "#073642";
+static const char solarized_base01[]    = "#586e75";
+static const char solarized_base00[]    = "#657b83";
+static const char solarized_base0[]     = "#839496";
+static const char solarized_base1[]     = "#93a1a1";
+static const char solarized_base2[]     = "#eee8d5";
+static const char solarized_base3[]     = "#fdf6e3";
+static const char solarized_yellow[]    = "#b58900";
+static const char solarized_orange[]    = "#cb4b16";
+static const char solarized_red[]       = "#dc322f";
+static const char solarized_magenta[]   = "#d33682";
+static const char solarized_violet[]    = "#6c71c4";
+static const char solarized_blue[]      = "#268bd2";
+static const char solarized_cyan[]      = "#2aa198";
+static const char solarized_green[]     = "#859900";
+
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#073642",
-	"#dc322f",
-	"#859900",
-	"#b58900",
-	"#268bd2",
-	"#d33682",
-	"#2aa198",
-	"#eee8d5",
+	solarized_base02,
+	solarized_red,
+	solarized_green,
+	solarized_yellow,
+	solarized_blue,
+	solarized_magenta,
+	solarized_cyan,
+	solarized_base2,
 
 	/* 8 bright colors */
-	"#002b36",
-	"#cb4b16",
-	"#586e75",
-	"#657b83",
-	"#839496",
-	"#6c71c4",
-	"#93a1a1",
-	"#fdf6e3",
+	solarized_base03,
+	solarized_orange,
+	solarized_base01,
+	solarized_base00,
+	solarized_base0,
+	solarized_violet,
+	solarized_base1,
+	solarized_base3,
 
 	[255] = 0,
 
