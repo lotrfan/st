@@ -76,7 +76,7 @@ static const char *colorname[] = {
 	solarized_blue,
 	solarized_magenta,
 	solarized_cyan,
-	solarized_base2,
+	solarized_base1,
 
 	/* 8 bright colors */
 	solarized_base03,
@@ -86,7 +86,7 @@ static const char *colorname[] = {
 	solarized_base0,
 	solarized_violet,
 	solarized_base1,
-	solarized_base3,
+	solarized_base2,
 
 	[255] = 0,
 
