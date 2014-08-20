@@ -48,50 +48,62 @@ static char termname[] = "st-256color";
 
 static unsigned int tabspaces = 8;
 
-static const char solarized_base03[]    = "#002b36";
-static const char solarized_base02[]    = "#073642";
-static const char solarized_base01[]    = "#586e75";
-static const char solarized_base00[]    = "#657b83";
-static const char solarized_base0[]     = "#839496";
-static const char solarized_base1[]     = "#93a1a1";
-static const char solarized_base2[]     = "#eee8d5";
-static const char solarized_base3[]     = "#fdf6e3";
-static const char solarized_yellow[]    = "#b58900";
-static const char solarized_orange[]    = "#cb4b16";
-static const char solarized_red[]       = "#dc322f";
-static const char solarized_magenta[]   = "#d33682";
-static const char solarized_violet[]    = "#6c71c4";
-static const char solarized_blue[]      = "#268bd2";
-static const char solarized_cyan[]      = "#2aa198";
-static const char solarized_green[]     = "#859900";
-
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	solarized_base02,
-	solarized_red,
-	solarized_green,
-	solarized_yellow,
-	solarized_blue,
-	solarized_magenta,
-	solarized_cyan,
-	solarized_base1,
+    // Based on gruvbox colors
+    "#282828",
+    "#cc241d",
+    "#98971a",
+    "#d79921",
+    "#458588",
+    "#b16286",
+    "#689d6a",
+    "#bdae93",
+    "#7c6f64",
+    "#fb4934",
+    "#b8bb26",
+    "#fabd2f",
+    "#83a598",
+    "#d3869b",
+    "#8ec07c",
+    "#ebdbb2",
 
-	/* 8 bright colors */
-	solarized_base03,
-	solarized_orange,
-	solarized_base01,
-	solarized_base00,
-	solarized_base0,
-	solarized_violet,
-	solarized_base1,
-	solarized_base2,
+    [24 ] = "#076678",
+    [66 ] = "#427b58",
+    [88 ] = "#9d0006",
+    [96 ] = "#8f3f71",
+    [100] = "#79740e",
+    [108] = "#8ec07c",
+    [109] = "#83a598",
+    [130] = "#af3a03",
+    [136] = "#b57614",
+    [142] = "#b8bb26",
+    [167] = "#fb4934",
+    [175] = "#d3869b",
+    [208] = "#fe8019",
+    [214] = "#fabd2f",
+    [223] = "#ebdbb2",
+    [228] = "#f4e8ba",
+    [229] = "#fdf4c1",
+    [230] = "#ffffc8",
+    [234] = "#1d2021",
+    [235] = "#282828",
+    [236] = "#32302f",
+    [237] = "#3c3836",
+    [239] = "#504945",
+    [241] = "#665c54",
+    [243] = "#7c6f64",
+    [244] = "#928374",
+    [245] = "#928374",
+    [246] = "#a89984",
+    [248] = "#bdae93",
+    [250] = "#d5c4a1",
 
-	[255] = 0,
+    [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+    /* more colors can be added after 255 to use with DefaultXX */
+    "#CBBE9B",
 };
 
 
@@ -99,9 +111,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-static unsigned int defaultfg = 12;
-static unsigned int defaultbg = 8;
-static unsigned int defaultcs = 14;
+static unsigned int defaultfg = 15;
+static unsigned int defaultbg = 0;
+static unsigned int defaultcs = 256;
 
 /*
  * Colors used, when the specific fg == defaultfg. So in reverse mode this
