@@ -123,8 +123,8 @@ static unsigned int defaultcs = 256;
  * will reverse too. Another logic would only make the simple feature too
  * complex.
  */
-static unsigned int defaultitalic = defaultfg;
-static unsigned int defaultunderline = defaultfg;
+static unsigned int defaultitalic = 15;
+static unsigned int defaultunderline = 15;
 
 /* Internal mouse shortcuts. */
 /* Beware that overloading Button1 will disable the selection. */
