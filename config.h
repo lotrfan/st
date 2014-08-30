@@ -54,59 +54,30 @@ static unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    // Based on gruvbox colors
-    "#282828",
-    "#cc241d",
-    "#98971a",
-    "#d79921",
-    "#458588",
-    "#b16286",
-    "#689d6a",
-    "#bdae93",
-    "#7c6f64",
-    "#fb4934",
-    "#b8bb26",
-    "#fabd2f",
-    "#83a598",
-    "#d3869b",
-    "#8ec07c",
-    "#bfb291",
-
-    [24 ] = "#076678",
-    [66 ] = "#427b58",
-    [88 ] = "#9d0006",
-    [96 ] = "#8f3f71",
-    [100] = "#79740e",
-    [108] = "#8ec07c",
-    [109] = "#83a598",
-    [130] = "#af3a03",
-    [136] = "#b57614",
-    [142] = "#b8bb26",
-    [167] = "#fb4934",
-    [175] = "#d3869b",
-    [208] = "#fe8019",
-    [214] = "#fabd2f",
-    [223] = "#ebdbb2",
-    [228] = "#f4e8ba",
-    [229] = "#fdf4c1",
-    [230] = "#ffffc8",
-    [234] = "#1d2021",
-    [235] = "#282828",
-    [236] = "#32302f",
-    [237] = "#3c3836",
-    [239] = "#504945",
-    [241] = "#665c54",
-    [243] = "#7c6f64",
-    [244] = "#928374",
-    [245] = "#928374",
-    [246] = "#a89984",
-    [248] = "#bdae93",
-    [250] = "#d5c4a1",
+    // Based on vim-hybrid colors
+    "#282A2E",
+    "#A54242",
+    "#8C9440",
+    "#DE935F",
+    "#5F819D",
+    "#85678F",
+    "#5E8D87",
+    "#707880",
+    "#373B41",
+    "#CC6666",
+    "#B5BD68",
+    "#F0C674",
+    "#81A2BE",
+    "#B294BB",
+    "#8ABEB7",
+    "#C5C8C6",
 
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
     "#CBBE9B",
+    "#1D1F21",
+    "#C5C8C6",
 };
 
 
@@ -114,8 +85,8 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor
  */
-static unsigned int defaultfg = 15;
-static unsigned int defaultbg = 0;
+static unsigned int defaultfg = 258;
+static unsigned int defaultbg = 257;
 static unsigned int defaultcs = 256;
 
 /*
