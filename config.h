@@ -54,30 +54,28 @@ static unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    // Based on vim-hybrid colors
-    "#282A2E",
-    "#A54242",
-    "#8C9440",
-    "#DE935F",
-    "#5F819D",
-    "#85678F",
-    "#5E8D87",
-    "#707880",
-    "#373B41",
-    "#CC6666",
-    "#B5BD68",
-    "#F0C674",
-    "#81A2BE",
-    "#B294BB",
-    "#8ABEB7",
-    "#C5C8C6",
+    "#0e0e0e",
+    "#a1564c",
+    "#4ca156",
+    "#97a14c",
+    "#564ca1",
+    "#a14c97",
+    "#4c97a1",
+    "#c5c5c5",
+    "#3c3c3c",
+    "#cb9790",
+    "#90cb97",
+    "#c4cb90",
+    "#9790cb",
+    "#cb90c4",
+    "#90c4cb",
+    "#ffffff",
 
     [255] = 0,
-
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#CBBE9B",
-    "#1D1F21",
-    "#C5C8C6",
+     /*more colors can be added after 255 to use with DefaultXX */
+    "#cbbe9b",
+    "#0e0e0e",
+    "#c5c5c5",
 };
 
 
