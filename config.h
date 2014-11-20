@@ -7,7 +7,7 @@
  */
 static char font[] = "Meslo LG S DZ for Powerline:size=14";
 static int borderpx = 0;
-static char shell[] = "/usr/bin/zsh";
+static char shell[] = "/bin/bash";
 
 /* identification sequence returned in DA and DECID */
 static char vtiden[] = "\033[?6c";
