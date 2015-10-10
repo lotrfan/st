@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "Meslo LG S DZ for Powerline:size=14";
+static char font[] = "Meslo LG S DZ for Powerline Plus Nerd File Types Mono:pixelsize=14";
 static int borderpx = 0;
 static int histsize = 2000;
 
