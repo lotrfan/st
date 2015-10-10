@@ -159,8 +159,6 @@ static Shortcut shortcuts[] = {
 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
 	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_u,           plumb,          {.v = "urlselect"} },
-	{ MODKEY|ShiftMask,     XK_U,           plumb,          {.v = "urlselect -c"} },
 };
 
 /*
