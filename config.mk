@@ -1,5 +1,5 @@
 # st version
-VERSION = 0.5
+VERSION = 0.6
 
 # Customize below to fit your system
 
@@ -14,7 +14,7 @@ X11LIB = /usr/X11R6/lib
 INCS = -I. -I/usr/include -I${X11INC} \
        `pkg-config --cflags fontconfig` \
        `pkg-config --cflags freetype2`
-LIBS = -L/usr/lib -lc -L${X11LIB} -lm -lrt -lX11 -lutil -lXext -lXft \
+LIBS = -L/usr/lib -lc -L${X11LIB} -lm -lrt -lX11 -lutil -lXft \
        `pkg-config --libs fontconfig`  \
        `pkg-config --libs freetype2`
 
