@@ -322,13 +322,6 @@ typedef union {
 } Arg;
 
 typedef struct {
-	uint b;
-	uint mask;
-	void (*func)(const Arg *);
-	const Arg arg;
-} MouseShortcut;
-
-typedef struct {
 	uint mod;
 	KeySym keysym;
 	void (*func)(const Arg *);
@@ -958,25 +951,16 @@ bpress(XEvent *e)
 {
 	struct timespec now;
 	Mousekey *mk;
-	MouseShortcut *ms;
 
 	if (IS_SET(MODE_MOUSE) && !(e->xbutton.state & forceselmod)) {
 		mousereport(e);
 		return;
 	}
 
-	for (mk = mkeys; mk < mkeys + LEN(mkeys); mk++) {
+	for (mk = mshortcuts; mk < mshortcuts + LEN(mshortcuts); mk++) {
 		if (e->xbutton.button == mk->b
 				&& match(mk->mask, e->xbutton.state)) {
 			ttysend(mk->s, strlen(mk->s));
-			return;
-		}
-	}
-
-	for (ms = mshortcuts; ms < mshortcuts + LEN(mshortcuts); ms++) {
-		if (e->xbutton.button == ms->b
-				&& match(ms->mask, e->xbutton.state)) {
-			ms->func(&ms->arg);
 			return;
 		}
 	}
